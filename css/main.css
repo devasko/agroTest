@@ -374,7 +374,7 @@ section {
   background-size: cover; }
 
 .heading--about {
-  background-image: url("../../img/heading-main.jpg"); }
+  background-image: url("../img/heading-main.jpg"); }
 
 .heading__title {
   font-family: 'MilkMustacheBB', cursive;

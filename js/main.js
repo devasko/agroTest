@@ -1,7 +1,7 @@
 // Скрипты страниц
 
 $( document ).ready( function () {
-    // Кнопка прокруткт вверх
+    // Кнопка прокрутки вверх
     $( window ).scroll(function () {
         if ( $( this ).scrollTop() > 500 ) {
             $( '.scrollTop' ).fadeIn();
@@ -18,9 +18,9 @@ $( document ).ready( function () {
     });
 
     //  Бургер главного меню
-    const burger = document.getElementById('burger' );
-    const times = document.getElementById('times' );
-    const menu = document.getElementById('nav__list' );
+    const burger = document.getElementById('burger' ),
+          times = document.getElementById('times' ),
+          menu = document.getElementById('nav__list' );
     burger.addEventListener('click', () => {
         menu.classList.toggle('show');
 

@@ -35,5 +35,29 @@ $( document ).ready( function () {
         menu.classList.toggle('show');
     });
 
+
+    // Галерея
+
+    const buttons = document.querySelectorAll( '.gallery__item' );
+    const overlay = document.querySelector( '.overlay' );
+    const overlayImage = document.querySelector( '.overlay-inner' );
+
+    function open( e ) {
+        overlay.classList.add( 'open' );
+
+        const src = e.currentTarget.querySelector( 'img' ).src;
+
+        console.log( src );
+        // overlayImage.src = src;
+        overlayImage.innerHTML = '<img class="overlay__img" src="' + src +'" alt="">' + '<button class="closeBtn"><i class="fa fa-times" aria-hidden="true"></i></button>';
+        console.log( overlayImage );
+    }
+
+    function close() {
+        overlay.classList.remove( 'open' );
+    }
+
+    buttons.forEach( button => button.addEventListener( 'click', open ));
+    overlay.addEventListener( 'click', close );
 });
 

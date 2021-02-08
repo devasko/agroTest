@@ -35,6 +35,7 @@ $( document ).ready( function () {
         menu.classList.toggle('show');
     });
 
+
     // Галерея
 
     if ( window.location.pathname === '/pages/gallery.html' ) {
@@ -44,7 +45,9 @@ $( document ).ready( function () {
 
         function open( e ) {
             overlay.classList.add( 'open' );
+
             const src = e.currentTarget.querySelector( 'img' ).src;
+
             overlayImage.innerHTML = '<img class="overlay__img" src="' + src +'" alt="">' + '<button class="closeBtn"><i class="fa fa-times" aria-hidden="true"></i></button>';
         }
 
@@ -57,8 +60,8 @@ $( document ).ready( function () {
     }
 
 
+    //  Вкладки страницы продукции
 
-//    Вкладки страницы продукции
     let tabItems = document.querySelectorAll( '.tabs__item' );
 
     tabItems.forEach( tabItem => tabItem.addEventListener( 'click', function () {

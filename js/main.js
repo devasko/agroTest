@@ -35,29 +35,35 @@ $( document ).ready( function () {
         menu.classList.toggle('show');
     });
 
-
     // Галерея
 
-    const buttons = document.querySelectorAll( '.gallery__item' );
-    const overlay = document.querySelector( '.overlay' );
-    const overlayImage = document.querySelector( '.overlay-inner' );
+    if ( window.location.pathname === '/pages/gallery.html' ) {
+        const buttons = document.querySelectorAll( '.gallery__item' );
+        const overlay = document.querySelector( '.overlay' );
+        const overlayImage = document.querySelector( '.overlay-inner' );
 
-    function open( e ) {
-        overlay.classList.add( 'open' );
+        function open( e ) {
+            overlay.classList.add( 'open' );
+            const src = e.currentTarget.querySelector( 'img' ).src;
+            overlayImage.innerHTML = '<img class="overlay__img" src="' + src +'" alt="">' + '<button class="closeBtn"><i class="fa fa-times" aria-hidden="true"></i></button>';
+        }
 
-        const src = e.currentTarget.querySelector( 'img' ).src;
+        function close() {
+            overlay.classList.remove( 'open' );
+        }
 
-        console.log( src );
-        // overlayImage.src = src;
-        overlayImage.innerHTML = '<img class="overlay__img" src="' + src +'" alt="">' + '<button class="closeBtn"><i class="fa fa-times" aria-hidden="true"></i></button>';
-        console.log( overlayImage );
+        buttons.forEach( button => button.addEventListener( 'click', open ));
+        overlay.addEventListener( 'click', close );
     }
 
-    function close() {
-        overlay.classList.remove( 'open' );
-    }
 
-    buttons.forEach( button => button.addEventListener( 'click', open ));
-    overlay.addEventListener( 'click', close );
+
+//    Вкладки страницы продукции
+    let tabItems = document.querySelectorAll( '.tabs__item' );
+
+    tabItems.forEach( tabItem => tabItem.addEventListener( 'click', function () {
+        tabItems.forEach( tabItem => tabItem.classList.remove( 'active' ));
+        this.classList.add( 'active' );
+    }));
 });
 

@@ -38,7 +38,7 @@ $( document ).ready( function () {
 
     // Галерея
 
-        if ( document.location.pathname.substr( -12) === 'gallery.html' ) {
+    if ( document.location.pathname.substr( -12) === 'gallery.html' ) {
         const buttons = document.querySelectorAll( '.gallery__item' );
         const overlay = document.querySelector( '.overlay' );
         const overlayImage = document.querySelector( '.overlay-inner' );

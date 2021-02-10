@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <title>Контакты</title>
+    <title>Продукция</title>
 </head>
 <body>
 
@@ -90,86 +90,83 @@
     </div>
 </header>
 
-<div class="contacts page container">
-    <div class="contacts__wrap wrap">
-        <div class="locations">
-            <div class="location">
-                <h5 class="location__name">Зеленоград</h5>
+<div class="contacts__page page container">
 
-                <p class="location__address">123456 г. Москва, Зеленоград, корп. 123, стр. 5</p>
+    <div class="locations wrap">
+        <div class="location">
+            <h5 class="location__name">Зеленоград</h5>
 
-                <p class="location__phone">88001234567</p>
-            </div>
+            <p class="location__address">123456 г. Москва, Зеленоград, корп. 123, стр. 5</p>
 
-            <div class="location">
-                <h5 class="location__name">Москва</h5>
+            <p class="location__phone">88001234567</p>
+        </div>
 
-                <p class="location__address">123456 г. Москва, пр-т Мира, д.18, корп. 6</p>
+        <div class="location">
+            <h5 class="location__name">Москва</h5>
 
-                <p class="location__phone">88007893245</p>
-            </div>
+            <p class="location__address">123456 г. Москва, пр-т Мира, д.18, корп. 6</p>
 
-            <div class="location">
-                <h5 class="location__name">Рязань</h5>
+            <p class="location__phone">88007893245</p>
+        </div>
 
-                <p class="location__address">390046 г. Рязань, ул. Есенина, д.55</p>
+        <div class="location">
+            <h5 class="location__name">Рязань</h5>
 
-                <p class="location__phone">88001236754</p>
-            </div>
+            <p class="location__address">390046 г. Рязань, ул. Есенина, д.55</p>
 
-            <div class="location">
-                <h5 class="location__name">Калуга</h5>
+            <p class="location__phone">88001236754</p>
+        </div>
 
-                <p class="location__address">123456 г. Калуга, ул. Зерновая, д. 40Б</p>
+        <div class="location">
+            <h5 class="location__name">Калуга</h5>
 
-                <p class="location__phone">88009876543</p>
-            </div>
+            <p class="location__address">123456 г. Калуга, ул. Зерновая, д. 40Б</p>
+
+            <p class="location__phone">88009876543</p>
         </div>
     </div>
 
-    <div class="contacts__content">
-        <main class="contacts__main container">
-            <div class="contacts__main-wrap wrap">
-                <p class=" main__subtitle subtitle">Вам есть что рассказать?</p>
 
-                <h3 class="main__title title">Напишите нам сообщение</h3>
+    <div class="contacts page__wrap wrap">
+        <aside class="page__sidebar contacts__sidebar">
+            <img src="../img/consult.png" alt="Наш  консультант" class="consult-img">
 
-                <form action="" class="contacts__form form">
-                    <div class="form__group">
-                        <input class="form__field name" type="text" name="name" placeholder="Введите Имя">
-                        <input class="form__field email" type="email" name="email" placeholder="Введите Email адрес">
-                    </div>
+            <div class="consult-info">
+                <p class=" sidebar__subtitle subtitle">Мы на связи</p>
 
-                    <div class="form__group">
-                        <input class="form__field phone" type="tel" name="name" placeholder="Номер телефона">
-                        <input class="form__field subj" type="text" name="subject" placeholder="Тема сообщения">
-                    </div>
+                <h3 class="sidebar__title title">Есть вопросы?</h3>
 
-                    <div class="form__group">
-                        <textarea class="form__field message" name="message" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
-                    </div>
+                <p class="sidebar__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который
+                    вызывает у некторых людей недоумение при попытках прочитать рыбу текст.</p>
+
+                <a href="" class="sidebar__btn btn">Узнать больше</a>
+            </div>
+        </aside>
+
+        <main class="page__content page__form">
+            <p class=" main__subtitle subtitle">Вам есть что рассказать?</p>
+
+            <h3 class="main__title title">Напишите нам сообщение</h3>
+
+            <form action="" class="contacts__form form">
+                <div class="form__group">
+                    <input class="form__field name" type="text" name="name" placeholder="Введите Имя">
+                    <input class="form__field email" type="email" name="email" placeholder="Введите Email адрес">
+                </div>
+
+                <div class="form__group">
+                    <input class="form__field phone" type="tel" name="name" placeholder="Номер телефона">
+                    <input class="form__field subj" type="text" name="subject" placeholder="Тема сообщения">
+                </div>
+
+                <div class="form__group textarea">
+                    <textarea class="form__field message" name="message" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
 
                     <button class="contacts__btn btn" type="submit">Отправить сообщение</button>
-                </form>
-            </div>
+                </div>
+
+            </form>
         </main>
-
-        <aside class="contacts__sidebar page__sidebar">
-
-            <img src="../img/consult.png" alt="" class="consult-img">
-            <p class=" sidebar__subtitle subtitle">Мы на связи</p>
-
-            <h3 class="sidebar__title title">Есть вопросы?</h3>
-
-            <p class="sidebar__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который
-                вызывает у некторых людей недоумение при попытках прочитать рыбу текст.</p>
-
-            <a href="" class="sidebar__btn btn">Узнать больше</a>
-        </aside>
-    </div>
-
-    <div class="contacts__map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa8c832e3265c372d44e0780863a9485979f74fa664b2350c8df599e68ab87aa4&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
     </div>
 </div>
 
@@ -212,7 +209,7 @@
                 </li>
 
                 <li class="explore__item">
-                    <a href="contacts.html" class="explore___link">Контакты</a>
+                    <a href="../contacts.html" class="explore___link">Контакты</a>
                 </li>
             </ul>
         </div>

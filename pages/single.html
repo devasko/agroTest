@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <title>Контакты</title>
+    <title>Страница новости</title>
 </head>
 <body>
 
@@ -85,93 +85,186 @@
         </div>
     </div>
 
-    <div class="heading--contacts heading">
-        <h1 class="heading__title">Контакты</h1>
+    <div class="heading--single heading">
+        <h1 class="heading__title">Страница новости или поста</h1>
     </div>
 </header>
 
-<div class="contacts__page page container">
+<div class="single page page__wrap wrap">
+    <main class="page__content">
+        <div class="single__image">
+            <time class="single__date" datetime="2021-02">10 Февраля 2021</time>
 
-    <div class="locations wrap">
-        <div class="location">
-            <h5 class="location__name">Зеленоград</h5>
-
-            <p class="location__address">123456 г. Москва, Зеленоград, корп. 123, стр. 5</p>
-
-            <p class="location__phone">88001234567</p>
+            <img class="single__img" src="../img/post1-full-img.jpg" alt="Изображение новости">
         </div>
 
-        <div class="location">
-            <h5 class="location__name">Москва</h5>
-
-            <p class="location__address">123456 г. Москва, пр-т Мира, д.18, корп. 6</p>
-
-            <p class="location__phone">88007893245</p>
+        <div class="single__top">
+            <a href="" class="single__author"><i class="fa fa-user" aria-hidden="true"></i> Админ</a>
+            <a href="" class="single__comments"><i class="fa fa-comments-o" aria-hidden="true"></i> 2 комментария</a>
         </div>
 
-        <div class="location">
-            <h5 class="location__name">Рязань</h5>
+        <h2 class="single__title">Заголовок первой новости</h2>
 
-            <p class="location__address">390046 г. Рязань, ул. Есенина, д.55</p>
+        <p class="single__text">Соблюдение определённых ограничений в рационе вовсе не означает, что вы должны исключить
+            из ежедневного меню все ваши любимые продукты и отдать предпочтение невкусной, но полезной пище. Вкусная и
+            полезная пища необходима для здоровья и работоспособности человека. Специалисты говорят, что ежедневная
+            зарядка, много воды и полезной пищи сделают и из обезьяны человека. Некоторая спорная пища становится
+            полезной, когда её употребляют несколько поколений предков.</p>
+        <p class="single__text">Жизнь в большом городе зачастую накладывает на людей очень много обязательств, которые
+            многим мешают планировать свое время. Поэтому времени катастрофически не хватает на все, в том числе и на
+            нормальную здоровую пищу. Полезные продукты необходимо включать в рацион каждый день: они богаты
+            аминокислотами, витаминами, микро- и макроэлементами, жирными кислотами, клетчаткой. На самом деле мы
+            боремся не за вкус еды, а со своей ленью, потому что нам очень удобно купить полуфабрикаты или готовые
+            продукты, чтобы быстрее приготовить.</p>
+        <p class="single__text">Являясь одной из самых распространённых в мире сельскохозяйственных культур, рис
+            занимает главенствующую позицию в национальной кухне сотен народов. В России до XIX века рис называли
+            «сарацинское зерно». Более половины населения Земли питаются в основном именно рисом, что делает эту
+            сельскохозяйственную культуру важнейшей на планете. В некоторых странах Азии из этого растения готовят такие
+            напитки, как вино и пиво. Из рисовых зерён делают так называемую съедобную рисовую бумагу, применяемую в
+            кондитерском деле.</p>
 
-            <p class="location__phone">88001236754</p>
+        <div class="single__tags">
+            <h3 class="tags-title">Теги:
+                <a href="#" class="tag">Сельское хозяйство</a>
+                <a href="#" class="tag">Продукты</a>
+                <a href="#" class="tag">Экология</a>
+            </h3>
+
+            <ul class="tags__social social">
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
 
-        <div class="location">
-            <h5 class="location__name">Калуга</h5>
+        <div class="single__creator creator">
+            <img src="../img/single-creator.jpg" alt="Автор новости" class="creator__thumb">
 
-            <p class="location__address">123456 г. Калуга, ул. Зерновая, д. 40Б</p>
+            <div class="creator__info">
+                <h4 class="creator__name">Кристина Иванова</h4>
 
-            <p class="location__phone">88009876543</p>
-        </div>
-    </div>
-
-
-    <div class="contacts page__wrap wrap">
-        <aside class="page__sidebar contacts__sidebar">
-            <img src="../img/consult.png" alt="Наш  консультант" class="consult-img">
-
-            <div class="consult-info">
-                <p class=" sidebar__subtitle subtitle">Мы на связи</p>
-
-                <h3 class="sidebar__title title">Есть вопросы?</h3>
-
-                <p class="sidebar__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который
-                    вызывает у некторых людей недоумение при попытках прочитать рыбу текст.</p>
-
-                <a href="" class="sidebar__btn btn">Узнать больше</a>
+                <p class="creator__quote">Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и
+                    вареной куриной грудки. Самыми лучшими способами приготовления еды являются следующие: варка на пару,
+                    запекание или варка в воде.</p>
             </div>
-        </aside>
+        </div>
+    </main>
 
-        <main class="page__content page__form">
-            <p class=" main__subtitle subtitle">Вам есть что рассказать?</p>
-
-            <h3 class="main__title title">Напишите нам сообщение</h3>
-
-            <form action="" class="contacts__form form">
-                <div class="form__group">
-                    <input class="form__field name" type="text" name="name" placeholder="Введите Имя">
-                    <input class="form__field email" type="email" name="email" placeholder="Введите Email адрес">
-                </div>
-
-                <div class="form__group">
-                    <input class="form__field phone" type="tel" name="name" placeholder="Номер телефона">
-                    <input class="form__field subj" type="text" name="subject" placeholder="Тема сообщения">
-                </div>
-
-                <div class="form__group textarea">
-                    <textarea class="form__field message" name="message" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
-
-                    <button class="contacts__btn btn" type="submit">Отправить сообщение</button>
-                </div>
-
+    <aside class="page__sidebar">
+        <div class="aside__block search">
+            <form action="" class="search__form">
+                <input type="text" class="single__search" name="single__search" placeholder="Поиск..">
+                <button class="search__btn" type="submit"><i class="fa fa-search"></i></button>
             </form>
-        </main>
-    </div>
+        </div>
 
-    <div class="contacts__map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa8c832e3265c372d44e0780863a9485979f74fa664b2350c8df599e68ab87aa4&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
-    </div>
+        <div class="aside__block posts">
+
+            <h3 class="aside__title">Последние новости</h3>
+
+            <div class="post">
+                <div class="post__thumb">
+                    <img src="../img/thumb1.jpg" alt="Изображение поста">
+                </div>
+                <div class="post__info">
+                    <a class="post__author"><i class="fa fa-user" aria-hidden="true"></i> Автор</a>
+                    <a href="#" class="post__title">Название новости или поста</a>
+                </div>
+            </div>
+
+
+            <div class="post">
+                <div class="post__thumb">
+                    <img src="../img/thumb2.jpg" alt="Изображение поста">
+                </div>
+                <div class="post__info">
+                    <a class="post__author"><i class="fa fa-user" aria-hidden="true"></i> Автор</a>
+                    <a href="#" class="post__title">Название новости или поста</a>
+                </div>
+            </div>
+
+
+            <div class="post">
+                <div class="post__thumb">
+                    <img src="../img/thumb1.jpg" alt="Изображение поста">
+                </div>
+                <div class="post__info">
+                    <a class="post__author"><i class="fa fa-user" aria-hidden="true"></i> Автор</a>
+                    <a href="#" class="post__title">Название новости или поста</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="aside__block cats">
+
+            <h3 class="aside__title">Категории</h3>
+
+            <ul class="cats__list">
+                <li class="cats__item">
+                    <a href="#" class="cats__link">Агроферма</a>
+                </li>
+
+                <li class="cats__item">
+                    <a href="#" class="cats__link">Органическая пища</a>
+                </li>
+
+                <li class="cats__item">
+                    <a href="#" class="cats__link">Молочная продукция</a>
+                </li>
+
+                <li class="cats__item">
+                    <a href="#" class="cats__link">Экологические решения</a>
+                </li>
+
+                <li class="cats__item">
+                    <a href="#" class="cats__link">Аграрные технологии</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="aside__block tags">
+            <h3 class="aside__title">Теги</h3>
+
+            <ul class="tags__list">
+                <li class="tags__item">
+                    <a href="#" class="tags__link">Фермерская продукция,</a>
+                </li>
+
+                <li class="tags__item">
+                    <a href="#" class="tags__link">Здоровье,</a>
+                </li>
+
+                <li class="tags__item">
+                    <a href="#" class="tags__link">Экология,</a>
+                </li>
+
+                <li class="tags__item">
+                    <a href="#" class="tags__link">Молочные продукты</a>
+                </li>
+            </ul>
+        </div>
+
+    </aside>
 </div>
 
 <footer class="container">

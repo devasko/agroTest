@@ -992,14 +992,14 @@ section {
   font-family: 'MilkMustacheBB', cursive;
   color: #fff; }
   .achievement__text::before {
-    content: url("../../img/spike-left.png");
+    content: url("../img/spike-left.png");
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     left: 10px; }
   .achievement__text::after {
-    content: url("../../img/spike-right.png");
+    content: url("../img/spike-right.png");
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);

@@ -2306,6 +2306,7 @@ footer.container {
 
 .aside__block.search {
   position: relative;
+  margin-top: 0;
   background-color: #ecdd5e; }
 
 .single__search {
